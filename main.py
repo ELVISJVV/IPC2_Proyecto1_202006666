@@ -1,11 +1,11 @@
 
-from ListaDoble import Lista_Doble
+from ListaDoble import ListaDoble
 
 
 if __name__ == '__main__':
     
     salir = False
-    rutas = Lista_Doble()
+    rutas = ListaDoble()
 
     while salir == False:
 

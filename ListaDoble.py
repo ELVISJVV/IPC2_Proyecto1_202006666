@@ -5,7 +5,7 @@ from Rejilla import Rejilla
 #ElementTree
 import xml.etree.ElementTree as ET
 
-class Lista_Doble:
+class ListaDoble:
 
     def __init__(self):
 
@@ -48,7 +48,7 @@ class Lista_Doble:
         temp = self.primero
 
         #Lista para los pacientes
-        listaPacientes = Lista_Doble()
+        listaPacientes = ListaDoble()
 
         #atributos del paciente
         nombre = ''
@@ -56,7 +56,7 @@ class Lista_Doble:
         periodos = 0
         dimension = 0
 
-        rejillas = Lista_Doble()
+        rejillas = ListaDoble()
 
         #atributos de la rejilla
         fila = ''
@@ -116,7 +116,7 @@ class Lista_Doble:
                 listaPacientes.insertar(paciente) 
                 # print('++++++++++++++++++++++++++')
                 #limpiar la lista rejillas
-                rejillas = Lista_Doble()
+                rejillas = ListaDoble()
 
             temp = temp.siguiente #pasamos a la siguiente ruta un archivo xml, siempre que hayamos agregado mas.
             
