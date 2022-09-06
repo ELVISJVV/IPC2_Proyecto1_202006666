@@ -1,4 +1,4 @@
-class Rejilla:
+class Celula:
 
     def __init__(self, fila, columna):
 

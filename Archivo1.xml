@@ -8,11 +8,11 @@
       <periodos>12</periodos>
       <m>10</m>
       <rejilla>
-         <celda f="0" c="4" />
-         <celda f="1" c="4" />
-         <celda f="2" c="4" />
-         <celda f="1" c="3" />
          <celda f="1" c="5" />
+         <celda f="2" c="5" />
+         <celda f="3" c="5" />
+         <celda f="2" c="4" />
+         <celda f="2" c="6" />
       </rejilla>
    </paciente>
    <paciente>

@@ -1,12 +1,16 @@
 class Paciente:
 
-    def __init__(self, nombre, edad,periodos,dimension,rejillas):
-
+    def __init__(self,id, nombre, edad,periodos,dimension,cuerpo,celulaInfectada):
+        self.id=id
         self.nombre = nombre
         self.edad = edad
         self.periodos = periodos
         self.dimension = dimension
-        self.rejillas = rejillas
+        self.cuerpo = cuerpo
+        self.celulaInfectada = celulaInfectada
+
+    def getId(self):
+        return self.id
 
     def getNombre(self):
         
@@ -24,9 +28,14 @@ class Paciente:
 
         return self.dimension
     
-    def getRejillas(self):
-        return self.rejillas
+    def getCuerpo(self):
+        return self.cuerpo
 
+    def getCelulaInfectada(self):
+        return self.celulaInfectada
+
+    def setId(self, id):
+        self.id = id
 
     def setNombre(self, nombre):
         
@@ -40,9 +49,12 @@ class Paciente:
     
     def setDimension(self, dimension):
         self.dimension = dimension
+
+    def setCuerpo(self, cuerpo):
+        self.cuerpo = cuerpo   
     
-    def setRejillas(self,rejillas):
-        self.rejillas = rejillas
+    def setCelulaInfectada(self,celulaInfectada):
+        self.celulaInfectada = celulaInfectada
     
 
     

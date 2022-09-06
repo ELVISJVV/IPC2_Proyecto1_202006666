@@ -1,7 +1,7 @@
 from nodo import Nodo
 from Paciente import Paciente
-from Rejilla import Rejilla
-
+from Celda import Celda
+from Matriz import MatrizDispersa
 #ElementTree
 import xml.etree.ElementTree as ET
 
@@ -51,16 +51,22 @@ class ListaDoble:
         listaPacientes = ListaDoble()
 
         #atributos del paciente
+        id =  1
         nombre = ''
         edad = 0
         periodos = 0
         dimension = 0
+        cuerpo = MatrizDispersa()
 
-        rejillas = ListaDoble()
+        listaCeldasInfectadas = ListaDoble()
 
         #atributos de la rejilla
         fila = ''
         columna = ''
+
+    # otras variables
+        idCelda = 1
+        
 
 
         while temp != None:
@@ -79,7 +85,7 @@ class ListaDoble:
                             for sub in subelemento: # sub sera las etiquetas <nombre> <edad>
 
                                 if sub.tag == 'nombre': 
-
+ 
                                     nombre = sub.text
                                     # print(nombre)
                                 elif sub.tag == 'edad':
@@ -108,15 +114,23 @@ class ListaDoble:
                                     # print(fila)
                                     # print(columna)
                                     # print("==============")
-                                    rejilla = Rejilla(fila, columna)
-                                    rejillas.insertar(rejilla)  
+                                    celula = Celda(fila, columna,idCelda,'#0001FE')
+                                    cuerpo.insertar(fila,columna,celula)
+                                    listaCeldasInfectadas.insertar(celula)  
+                                    idCelda += 1 
 
                 
-                paciente = Paciente(nombre, edad, periodos, dimension,rejillas) 
+                paciente = Paciente(id,nombre, edad, periodos, dimension, cuerpo,listaCeldasInfectadas) 
                 listaPacientes.insertar(paciente) 
+                id +=1
+                nombre = ''
+                fila = 0
+                columna = 0
+                cuerpo = MatrizDispersa()
                 # print('++++++++++++++++++++++++++')
-                #limpiar la lista rejillas
-                rejillas = ListaDoble()
+                #limpiar la lista listaCeldasInfectadas
+                listaCeldasInfectadas = ListaDoble()
+                idCelda = 0 
 
             temp = temp.siguiente #pasamos a la siguiente ruta un archivo xml, siempre que hayamos agregado mas.
             
@@ -130,7 +144,7 @@ class ListaDoble:
 
             print('------------------------------------\nPaciente: {}\nEdad: {}\nPeriodos: {}\nDimension: {}\nRejilla:\n\n'.format(temp.dato.nombre, temp.dato.edad, temp.dato.periodos, temp.dato.dimension)) 
 
-            temp.dato.rejillas.mostrarRejillas()
+            temp.dato.listaCeldasInfectadas.mostrarRejillas()
 
             temp = temp.siguiente 
     

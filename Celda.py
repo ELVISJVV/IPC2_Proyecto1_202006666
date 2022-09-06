@@ -1,11 +1,12 @@
 class Celda:
     
-    def __init__(self, x, y, tipo):
+    def __init__(self, x, y, idCelda,color):
         
         self.x = x
         self.y = y
-        self.tipo = tipo
-        self.siguiente = None
+        self.idCelda = idCelda
+        self.color = color
+        
         
     
     
@@ -17,11 +18,12 @@ class Celda:
         
         return self.y
     
-    def getTipo(self):
+    def getIdCelda(self):
         
-        return self.tipo
+        return self.idCelda
     
-
+    def getColor(self):
+        return self.color
     
     def setX(self, x):
         
@@ -31,6 +33,9 @@ class Celda:
         
         self.y = y 
         
-    def setTipo(self, tipo):
+    def setIdCelda(self, idCelda):
         
-        self.tipo = tipo    
+        self.idCelda = idCelda
+
+    def setColor(self, color):
+        self.color = color    

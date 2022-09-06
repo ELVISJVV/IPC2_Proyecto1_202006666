@@ -6,6 +6,7 @@ if __name__ == '__main__':
     
     salir = False
     rutas = ListaDoble()
+    Pacientes = ListaDoble()
 
     while salir == False:
 
@@ -48,21 +49,41 @@ if __name__ == '__main__':
 
         elif opcion =='3':
             
-            try:
+            # try:
                 listaPacientes = rutas.cargarPacientes()
+                paciente = ListaDoble()
+
+                n = 0
+                eleccion = ''
+
                 if listaPacientes.size != 0:
                     listaPacientes.verPacientes()
                     print("Ingresa el número de paciente deseado")
                     seleccionPaciente =input()
+                    # muestra paciente seleccionado 
+                    # nombreseleccion = listaPacientes.returnElement(int(seleccionPaciente))
+                    # print(nombreseleccion)
+                    paciente = listaPacientes.returnElement(int(seleccionPaciente))
+                    infecciones = paciente.getDato().getCelulaInfectada()
+                    mapaCuerpo = paciente.getDato().getCuerpo()
+                    nombrePaciente = paciente.getDato().getNombre()
+                    dimension = paciente.getDato().getDimension()
 
-                    nombreseleccion = listaPacientes.returnElement(int(seleccionPaciente))
-                    print(nombreseleccion)
+                    j = 1
+                    for i in range(0,infecciones.size, 1):
+                                    
+                                    uM = infecciones.returnElement(j)
+                                    mapaCuerpo.actualizarDato(uM.getDato().getX(), uM.getDato().getY(), uM.getDato())
+                                    
+                                    j += 1
+                                
+                    mapaCuerpo.graficarMapa(nombrePaciente,dimension,dimension)
 
                 else:
                     print("No hay datos de pacientes")
 
-            except:
-                print("No se hallaron datos almacenados")
+            # except:
+            #     print("No se hallaron datos almacenados")
             
         elif opcion == '4':
             print("Hasta pronto")
