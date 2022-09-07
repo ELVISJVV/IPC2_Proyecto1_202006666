@@ -185,7 +185,7 @@ class MatrizDispersa():
         # print('=======')
         # print(nuevaCelda)
         # print('=======')
-        nodo_X = self.filas.getCabeza(posx)
+        nodo_X = self.filas.getCabeza(int(posx))
         # nodo_Y = self.columnas.getCabeza(posy)
         
         # Actualizar en fila
