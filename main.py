@@ -68,15 +68,26 @@ if __name__ == '__main__':
                     mapaCuerpo = paciente.getDato().getCuerpo()
                     nombrePaciente = paciente.getDato().getNombre()
                     dimension = paciente.getDato().getDimension()
-
+                    print(infecciones)
+                    print(mapaCuerpo)
+                    print(nombrePaciente)
+                    print(dimension)
+                    print(infecciones.size)
+                    print(infecciones.returnElement(1))
+                    unidadesinfectadas = infecciones.returnElement(1)
+                    print(unidadesinfectadas.getDato().getX())
+                    print (unidadesinfectadas.getDato().getY())
+                    print(unidadesinfectadas.getDato())
+                    mapaCuerpo.mostrarMatriz()
                     j = 1
                     for i in range(0,infecciones.size, 1):
                                     
-                                    uM = infecciones.returnElement(j)
-                                    mapaCuerpo.actualizarDato(uM.getDato().getX(), uM.getDato().getY(), uM.getDato())
-                                    
-                                    j += 1
+                                unidadesinfectadas = infecciones.returnElement(j)
+                                mapaCuerpo.actualizarDato(unidadesinfectadas.getDato().getX(), unidadesinfectadas.getDato().getY(), unidadesinfectadas.getDato())
                                 
+                                j += 1
+                                
+                    mapaCuerpo.mostrarMatriz()
                     mapaCuerpo.graficarMapa(nombrePaciente,dimension,dimension)
 
                 else:

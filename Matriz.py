@@ -1,11 +1,61 @@
 
+from re import X
 from NodoCabeza import NodoCabeza
 from ListaHead import ListaHead
 from Celda import Celda
-from NodoCelda import NodoCelda
+# from NodoCelda import NodoCelda
 import os 
 import webbrowser
 
+class NodoCelda(): 
+    def __init__(self, x, y, dato):
+        self.dato = dato
+        self.coordenadaX = x  
+        self.coordenadaY = y  
+        self.arriba = None
+        self.abajo = None
+        self.derecha = None  
+        self.izquierda = None  
+
+    def setArriba(self, arriba):
+        
+        self.arriba = arriba
+    
+    def getArriba(self):
+        
+        return self.arriba
+    
+    def setAbajo(self, abajo):
+        
+        self.abajo = abajo
+    
+    def getAbajo(self):
+       
+        return self.abajo
+
+    def setDerecha(self, derecha):
+        
+        self.derecha = derecha
+    
+    def getDerecha(self):
+        
+        return self.derecha
+    
+    def setIzquierda(self, izquierda):
+        
+        self.izquierda = izquierda
+    
+    def getIzquierda(self):
+        
+        return self.izquierda
+    
+    def setDato(self, dato):
+        
+        self.dato = dato
+    
+    def getDato(self):
+        
+        return self.dato
 
 class MatrizDispersa():
     def __init__(self):
@@ -118,7 +168,8 @@ class MatrizDispersa():
      
         inicio = self.filas.primero.id
         final = self.filas.ultimo.id
-
+        print(inicio)
+        print(final)
         i = inicio
 
         for j  in range(inicio, final + 1):
@@ -127,27 +178,34 @@ class MatrizDispersa():
 
             i +=  1
      
-    def actualizarDato(self, pos_x, pos_y, dato):
+    def actualizarDato(self, posx, posy, dato):
         
-        nueva_celda = NodoCelda(pos_x, pos_y, dato)
+        nuevaCelda = NodoCelda(posx, posy, dato)
         
-        nodo_X = self.filas.getCabeza(pos_x)
-        nodo_Y = self.columnas.getCabeza(pos_y)
+        # print('=======')
+        # print(nuevaCelda)
+        # print('=======')
+        nodo_X = self.filas.getCabeza(posx)
+        # nodo_Y = self.columnas.getCabeza(posy)
         
         # Actualizar en fila
-        
-        if nueva_celda.coordenadaY == nodo_X.getAcceso().coordenadaY:
+        print(nodo_X)
+        # print(posx)
+        x=nodo_X.getAcceso().coordenadaY
+        print(nodo_X.getAcceso().coordenadaY)
+        if nuevaCelda.coordenadaY == x:
+        # if nuevaCelda.coordenadaY == nodo_X.getAcceso().coordenadaY:
             
-            nodo_X.getAcceso().setDato(nueva_celda.getDato())
+            nodo_X.getAcceso().setDato(nuevaCelda.getDato())
         else:
             
             temp = nodo_X.getAcceso()
             
             while temp != None:
                 
-                if nueva_celda.coordenadaY == temp.coordenadaY:
+                if nuevaCelda.coordenadaY == temp.coordenadaY:
                     
-                    temp.setDato(nueva_celda.getDato())
+                    temp.setDato(nuevaCelda.getDato())
                 
                 temp = temp.getDerecha()
 

@@ -1,0 +1,277 @@
+digraph L{ 
+ node[shape= square, fillcolor="#C0C0C0", style= filled]; 
+ 
+ edge[style = invis]; 
+ ranksep = 0 
+ nodesep = 0.1  
+ bgcolor = "#EDBB99 " 
+ subgraph cluster_A{ 
+ 
+ label = "AriGameplays" 
+ bgcolor = "#20B2AA" 
+ fontcolor = white 
+ fontsize = 30 
+ raiz[label= "", style = invis] 
+ edge[dir = "both"] 
+ Fila1[label = "1", group = 0]; 
+Fila2[label = "2", group = 0]; 
+Fila3[label = "3", group = 0]; 
+Fila4[label = "4", group = 0]; 
+Fila5[label = "5", group = 0]; 
+Fila6[label = "6", group = 0]; 
+Fila7[label = "7", group = 0]; 
+Fila8[label = "8", group = 0]; 
+Fila9[label = "9", group = 0]; 
+Fila10[label = "10", group = 0]; 
+
+Fila1->Fila2; 
+Fila2->Fila3; 
+Fila3->Fila4; 
+Fila4->Fila5; 
+Fila5->Fila6; 
+Fila6->Fila7; 
+Fila7->Fila8; 
+Fila8->Fila9; 
+Fila9->Fila10; 
+
+Columna1[label = "1", group = 1]; 
+Columna2[label = "2", group = 2]; 
+Columna3[label = "3", group = 3]; 
+Columna4[label = "4", group = 4]; 
+Columna5[label = "5", group = 5]; 
+Columna6[label = "6", group = 6]; 
+Columna7[label = "7", group = 7]; 
+Columna8[label = "8", group = 8]; 
+Columna9[label = "9", group = 9]; 
+Columna10[label = "10", group = 10]; 
+
+Columna1->Columna2; 
+Columna2->Columna3; 
+Columna3->Columna4; 
+Columna4->Columna5; 
+Columna5->Columna6; 
+Columna6->Columna7; 
+Columna7->Columna8; 
+Columna8->Columna9; 
+Columna9->Columna10; 
+
+ raiz -> Fila1 
+ raiz -> Columna1 
+ 
+{rank = same; raiz; Columna1; Columna2; Columna3; Columna4; Columna5; Columna6; Columna7; Columna8; Columna9; Columna10} 
+ 
+nodo1[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo2[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo3[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo4[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo5[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo6[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo7[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo8[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo9[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo10[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo11[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo12[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo13[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo14[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo15[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo16[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo17[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo18[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo19[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo20[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo21[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo22[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo23[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo24[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo25[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo26[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo27[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo28[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo29[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo30[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo31[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo32[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo33[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo34[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo35[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo36[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo37[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo38[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo39[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo40[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo41[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo42[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo43[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo44[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo45[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo46[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo47[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo48[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo49[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo50[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo51[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo52[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo53[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo54[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo55[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo56[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo57[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo58[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo59[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo60[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo61[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo62[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo63[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo64[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo65[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo66[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo67[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo68[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo69[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo70[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo71[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo72[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo73[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo74[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo75[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo76[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo77[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo78[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo79[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo80[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo81[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo82[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo83[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo84[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo85[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo86[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo87[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo88[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo89[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo90[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo91[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo92[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo93[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo94[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo95[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo96[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo97[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo98[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo99[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo100[label = "", fillcolor = "#ffffff", group = 10]; 
+
+Fila1 -> nodo1; 
+nodo1 -> nodo2
+nodo2 -> nodo3
+nodo3 -> nodo4
+nodo4 -> nodo5
+nodo5 -> nodo6
+nodo6 -> nodo7
+nodo7 -> nodo8
+nodo8 -> nodo9
+nodo9 -> nodo10
+Fila2 -> nodo11; 
+nodo11 -> nodo12
+nodo12 -> nodo13
+nodo13 -> nodo14
+nodo14 -> nodo15
+nodo15 -> nodo16
+nodo16 -> nodo17
+nodo17 -> nodo18
+nodo18 -> nodo19
+nodo19 -> nodo20
+Fila3 -> nodo21; 
+nodo21 -> nodo22
+nodo22 -> nodo23
+nodo23 -> nodo24
+nodo24 -> nodo25
+nodo25 -> nodo26
+nodo26 -> nodo27
+nodo27 -> nodo28
+nodo28 -> nodo29
+nodo29 -> nodo30
+Fila4 -> nodo31; 
+nodo31 -> nodo32
+nodo32 -> nodo33
+nodo33 -> nodo34
+nodo34 -> nodo35
+nodo35 -> nodo36
+nodo36 -> nodo37
+nodo37 -> nodo38
+nodo38 -> nodo39
+nodo39 -> nodo40
+Fila5 -> nodo41; 
+nodo41 -> nodo42
+nodo42 -> nodo43
+nodo43 -> nodo44
+nodo44 -> nodo45
+nodo45 -> nodo46
+nodo46 -> nodo47
+nodo47 -> nodo48
+nodo48 -> nodo49
+nodo49 -> nodo50
+Fila6 -> nodo51; 
+nodo51 -> nodo52
+nodo52 -> nodo53
+nodo53 -> nodo54
+nodo54 -> nodo55
+nodo55 -> nodo56
+nodo56 -> nodo57
+nodo57 -> nodo58
+nodo58 -> nodo59
+nodo59 -> nodo60
+Fila7 -> nodo61; 
+nodo61 -> nodo62
+nodo62 -> nodo63
+nodo63 -> nodo64
+nodo64 -> nodo65
+nodo65 -> nodo66
+nodo66 -> nodo67
+nodo67 -> nodo68
+nodo68 -> nodo69
+nodo69 -> nodo70
+Fila8 -> nodo71; 
+nodo71 -> nodo72
+nodo72 -> nodo73
+nodo73 -> nodo74
+nodo74 -> nodo75
+nodo75 -> nodo76
+nodo76 -> nodo77
+nodo77 -> nodo78
+nodo78 -> nodo79
+nodo79 -> nodo80
+Fila9 -> nodo81; 
+nodo81 -> nodo82
+nodo82 -> nodo83
+nodo83 -> nodo84
+nodo84 -> nodo85
+nodo85 -> nodo86
+nodo86 -> nodo87
+nodo87 -> nodo88
+nodo88 -> nodo89
+nodo89 -> nodo90
+Fila10 -> nodo91; 
+nodo91 -> nodo92
+nodo92 -> nodo93
+nodo93 -> nodo94
+nodo94 -> nodo95
+nodo95 -> nodo96
+nodo96 -> nodo97
+nodo97 -> nodo98
+nodo98 -> nodo99
+nodo99 -> nodo100
+
+{ rank = same; Fila1; nodo1; nodo2; nodo3; nodo4; nodo5; nodo6; nodo7; nodo8; nodo9; nodo10} 
+{ rank = same; Fila2; nodo11; nodo12; nodo13; nodo14; nodo15; nodo16; nodo17; nodo18; nodo19; nodo20} 
+{ rank = same; Fila3; nodo21; nodo22; nodo23; nodo24; nodo25; nodo26; nodo27; nodo28; nodo29; nodo30} 
+{ rank = same; Fila4; nodo31; nodo32; nodo33; nodo34; nodo35; nodo36; nodo37; nodo38; nodo39; nodo40} 
+{ rank = same; Fila5; nodo41; nodo42; nodo43; nodo44; nodo45; nodo46; nodo47; nodo48; nodo49; nodo50} 
+{ rank = same; Fila6; nodo51; nodo52; nodo53; nodo54; nodo55; nodo56; nodo57; nodo58; nodo59; nodo60} 
+{ rank = same; Fila7; nodo61; nodo62; nodo63; nodo64; nodo65; nodo66; nodo67; nodo68; nodo69; nodo70} 
+{ rank = same; Fila8; nodo71; nodo72; nodo73; nodo74; nodo75; nodo76; nodo77; nodo78; nodo79; nodo80} 
+{ rank = same; Fila9; nodo81; nodo82; nodo83; nodo84; nodo85; nodo86; nodo87; nodo88; nodo89; nodo90} 
+{ rank = same; Fila10; nodo91; nodo92; nodo93; nodo94; nodo95; nodo96; nodo97; nodo98; nodo99; nodo100} 
+} 
+ } 
+ 

@@ -1,4 +1,4 @@
-
+from NodoCabeza import NodoCabeza
 
 class ListaHead:
     

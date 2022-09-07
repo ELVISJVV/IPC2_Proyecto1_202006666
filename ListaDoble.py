@@ -1,5 +1,7 @@
+from typing import List
 from nodo import Nodo
 from Paciente import Paciente
+from Celda import  CelulaInfectada
 from Celda import Celda
 from Matriz import MatrizDispersa
 #ElementTree
@@ -59,13 +61,16 @@ class ListaDoble:
         cuerpo = MatrizDispersa()
 
         listaCeldasInfectadas = ListaDoble()
-
+        listaCeldasNormales = ListaDoble()
         #atributos de la rejilla
         fila = ''
         columna = ''
 
     # otras variables
         idCelda = 1
+        idCeldaInfectada = 1
+
+        
         
 
 
@@ -101,6 +106,13 @@ class ListaDoble:
 
                             dimension = int(subelemento.text) 
                             # print(dimension)
+                            for i in range(1,dimension+1,1):
+                                for j in range(1,dimension+1,1):
+                                    celulas =Celda(i,j,idCelda,"#ffffff")
+                                    cuerpo.insertar(i,j,celulas)
+                                    # listaCeldasNormales.insertar(celulas)
+                                    idCelda += 1 
+                                    
 
                         elif subelemento.tag == 'rejilla': 
 
@@ -114,10 +126,11 @@ class ListaDoble:
                                     # print(fila)
                                     # print(columna)
                                     # print("==============")
-                                    celula = Celda(fila, columna,idCelda,'#0001FE')
-                                    cuerpo.insertar(fila,columna,celula)
-                                    listaCeldasInfectadas.insertar(celula)  
-                                    idCelda += 1 
+                                    celulainfec = CelulaInfectada(fila, columna,idCeldaInfectada,'#0001FE')
+                                    # cuerpo.insertar(fila,columna,celulainfec)
+                                    listaCeldasInfectadas.insertar(celulainfec)  
+                                    
+                                    idCeldaInfectada += 1
 
                 
                 paciente = Paciente(id,nombre, edad, periodos, dimension, cuerpo,listaCeldasInfectadas) 
@@ -131,6 +144,7 @@ class ListaDoble:
                 #limpiar la lista listaCeldasInfectadas
                 listaCeldasInfectadas = ListaDoble()
                 idCelda = 0 
+                idCeldaInfectada = 0
 
             temp = temp.siguiente #pasamos a la siguiente ruta un archivo xml, siempre que hayamos agregado mas.
             

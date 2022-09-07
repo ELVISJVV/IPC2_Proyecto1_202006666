@@ -5,10 +5,10 @@ class NodoCabeza:
         self.id = id
         self.anterior = None
         self.siguiente = None
-        self.acceso = None
+        self.__acceso = None
     
     def getAcceso(self):
-        return self.acceso
+        return self.__acceso
 
-    def setAcceso(self, nuevoAcceso):
-        self.acceso = nuevoAcceso
+    def setAcceso(self, nuevo_acceso):
+        self.__acceso = nuevo_acceso

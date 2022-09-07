@@ -1,9 +1,9 @@
 class Celda:
     
-    def __init__(self, x, y, idCelda,color):
+    def __init__(self, X, Y, idCelda,color):
         
-        self.x = x
-        self.y = y
+        self.coordenadaX = X
+        self.coordenadaY = Y
         self.idCelda = idCelda
         self.color = color
         
@@ -12,11 +12,11 @@ class Celda:
     
     def getX(self):
         
-        return self.x
+        return self.coordenadaX
     
     def getY(self):
         
-        return self.y
+        return self.coordenadaY
     
     def getIdCelda(self):
         
@@ -25,13 +25,13 @@ class Celda:
     def getColor(self):
         return self.color
     
-    def setX(self, x):
+    def setX(self, X):
         
-        self.x = x   
+        self.coordenadaX = X
     
-    def setY(self, y):
+    def setY(self, Y):
         
-        self.y = y 
+        self.coordenadaY = Y 
         
     def setIdCelda(self, idCelda):
         
@@ -39,3 +39,9 @@ class Celda:
 
     def setColor(self, color):
         self.color = color    
+
+
+class CelulaInfectada(Celda):
+    def __init__(self, X, Y, idCelda,color):
+    
+        Celda.__init__(self, X, Y, idCelda, color)
