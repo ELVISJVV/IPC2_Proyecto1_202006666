@@ -65,7 +65,7 @@ class ListaDoble:
         #atributos de la rejilla
         fila = ''
         columna = ''
-
+        validacionFilaColumna = True
     # otras variables
         idCelda = 1
         idCeldaInfectada = 1
@@ -78,7 +78,7 @@ class ListaDoble:
 
             tree = ET.parse(temp.dato) 
             root = tree.getroot() #obtengo la etiqueta raíz
-
+            validacionFilaColumna = True
             for elemento in root: # elemento es la etiqueta <paciente>
 
                 if elemento.tag == 'paciente':
@@ -106,22 +106,40 @@ class ListaDoble:
 
                             dimension = int(subelemento.text) 
                             # print(dimension)
-                            for i in range(1,dimension+1,1):
-                                for j in range(1,dimension+1,1):
-                                    celulas =Celda(i,j,idCelda,"#ffffff")
-                                    cuerpo.insertar(i,j,celulas)
-                                    # listaCeldasNormales.insertar(celulas)
-                                    idCelda += 1 
+                            if dimension % 10 == 0 and dimension <= 10000 and dimension != 0:
+                                cuerpo = MatrizDispersa()
+                                print(" es adecuada")
+                                for i in range(1,dimension+1,1):
+                                    # print("prueba2")
+                                    for j in range(1,dimension+1,1):
+                                        # print("prueba 3")
+                                        celulas =Celda(i,j,idCelda,"#ffffff")
+                                        cuerpo.insertar(i,j,celulas)
+                                        # listaCeldasNormales.insertar(celulas)
+                                        idCelda += 1 
+                                
+                            else:
+                                print("no es addecuado")
+                                
+                            
                                     
 
                         elif subelemento.tag == 'rejilla': 
-
+                            validacionFilaColumna = True
                             for sub in subelemento: 
 
                                 if sub.tag == 'celda':
 
                                     fila = sub.get('f') 
                                     columna = sub.get('c') 
+
+                                    if int(fila) <= 0 or int(fila) > dimension:
+                                        validacionFilaColumna = False
+                                        print(fila + " fila")
+                                    if int(columna) <= 0 or int(columna) > dimension :
+                                        validacionFilaColumna = False
+                                        print(columna + " colum")
+                                    
                                     # print("================")
                                     # print(fila)
                                     # print(columna)
@@ -133,20 +151,29 @@ class ListaDoble:
                                     idCeldaInfectada += 1
 
                 
-                paciente = Paciente(id,nombre, edad, periodos, dimension, cuerpo,listaCeldasInfectadas) 
-                listaPacientes.insertar(paciente) 
-                id +=1
-                nombre = ''
-                fila = 0
-                columna = 0
-                cuerpo = MatrizDispersa()
-                # print('++++++++++++++++++++++++++')
-                #limpiar la lista listaCeldasInfectadas
-                listaCeldasInfectadas = ListaDoble()
-                idCelda = 0 
-                idCeldaInfectada = 0
-
-            temp = temp.siguiente #pasamos a la siguiente ruta un archivo xml, siempre que hayamos agregado mas.
+                # def es_multiplo(numero, multiplo):
+                 # Si el residuo es 0, es múltiplo
+                if dimension % 10 == 0 and dimension <= 10000 and dimension != 0 and periodos <= 10000 and validacionFilaColumna == True: 
+                #     pass
+                    print("Antes de agregar")
+                    paciente = Paciente(id,nombre, edad, periodos, dimension, cuerpo,listaCeldasInfectadas) 
+                    listaPacientes.insertar(paciente) 
+                    id +=1
+                    nombre = ''
+                    fila = 0
+                    columna = 0
+                    cuerpo = MatrizDispersa()
+                    # print('++++++++++++++++++++++++++')
+                    #limpiar la lista listaCeldasInfectadas
+                    listaCeldasInfectadas = ListaDoble()
+                    idCelda = 0 
+                    idCeldaInfectada = 0
+                    print("seagrego")
+                    validacionFilaColumna = True 
+               
+                
+            if dimension % 10 == 0 and dimension <= 10000:
+                temp = temp.siguiente #pasamos a la siguiente ruta un archivo xml, siempre que hayamos agregado mas.
             
         return listaPacientes 
 

@@ -80,14 +80,14 @@ if __name__ == '__main__':
                     print(unidadesinfectadas.getDato())
                     mapaCuerpo.mostrarMatriz()
                     j = 1
-                    for i in range(0,infecciones.size, 1):
+                    # for i in range(0,infecciones.size, 1):
                                     
-                                unidadesinfectadas = infecciones.returnElement(j)
-                                mapaCuerpo.actualizarDato(unidadesinfectadas.getDato().getX(), unidadesinfectadas.getDato().getY(), unidadesinfectadas.getDato())
+                    #             unidadesinfectadas = infecciones.returnElement(j)
+                    #             mapaCuerpo.actualizarDato(unidadesinfectadas.getDato().getX(), unidadesinfectadas.getDato().getY(), unidadesinfectadas.getDato())
                                 
-                                j += 1
+                    #             j += 1
                                 
-                    mapaCuerpo.mostrarMatriz()
+                    # mapaCuerpo.mostrarMatriz()
                     mapaCuerpo.graficarMapa(nombrePaciente,dimension,dimension)
 
                 else:

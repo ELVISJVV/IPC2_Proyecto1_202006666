@@ -1,0 +1,277 @@
+digraph L{ 
+ node[shape= square, fillcolor="#C0C0C0", style= filled]; 
+ 
+ edge[style = invis]; 
+ ranksep = 0 
+ nodesep = 0.1  
+ bgcolor = "#EDBB99 " 
+ subgraph cluster_A{ 
+ 
+ label = "Renaldo" 
+ bgcolor = "#20B2AA" 
+ fontcolor = white 
+ fontsize = 30 
+ raiz[label= "", style = invis] 
+ edge[dir = "both"] 
+ Fila1[label = "1", group = 0]; 
+Fila2[label = "2", group = 0]; 
+Fila3[label = "3", group = 0]; 
+Fila4[label = "4", group = 0]; 
+Fila5[label = "5", group = 0]; 
+Fila6[label = "6", group = 0]; 
+Fila7[label = "7", group = 0]; 
+Fila8[label = "8", group = 0]; 
+Fila9[label = "9", group = 0]; 
+Fila10[label = "10", group = 0]; 
+
+Fila1->Fila2; 
+Fila2->Fila3; 
+Fila3->Fila4; 
+Fila4->Fila5; 
+Fila5->Fila6; 
+Fila6->Fila7; 
+Fila7->Fila8; 
+Fila8->Fila9; 
+Fila9->Fila10; 
+
+Columna1[label = "1", group = 1]; 
+Columna2[label = "2", group = 2]; 
+Columna3[label = "3", group = 3]; 
+Columna4[label = "4", group = 4]; 
+Columna5[label = "5", group = 5]; 
+Columna6[label = "6", group = 6]; 
+Columna7[label = "7", group = 7]; 
+Columna8[label = "8", group = 8]; 
+Columna9[label = "9", group = 9]; 
+Columna10[label = "10", group = 10]; 
+
+Columna1->Columna2; 
+Columna2->Columna3; 
+Columna3->Columna4; 
+Columna4->Columna5; 
+Columna5->Columna6; 
+Columna6->Columna7; 
+Columna7->Columna8; 
+Columna8->Columna9; 
+Columna9->Columna10; 
+
+ raiz -> Fila1 
+ raiz -> Columna1 
+ 
+{rank = same; raiz; Columna1; Columna2; Columna3; Columna4; Columna5; Columna6; Columna7; Columna8; Columna9; Columna10} 
+ 
+nodo501[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo502[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo503[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo504[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo505[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo506[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo507[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo508[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo509[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo510[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo511[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo512[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo513[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo514[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo515[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo516[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo517[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo518[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo519[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo520[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo521[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo522[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo523[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo524[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo525[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo526[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo527[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo528[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo529[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo530[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo531[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo532[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo533[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo534[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo535[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo536[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo537[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo538[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo539[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo540[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo541[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo542[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo543[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo544[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo545[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo546[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo547[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo548[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo549[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo550[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo551[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo552[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo553[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo554[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo555[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo556[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo557[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo558[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo559[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo560[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo561[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo562[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo563[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo564[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo565[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo566[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo567[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo568[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo569[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo570[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo571[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo572[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo573[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo574[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo575[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo576[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo577[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo578[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo579[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo580[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo581[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo582[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo583[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo584[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo585[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo586[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo587[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo588[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo589[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo590[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo591[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo592[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo593[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo594[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo595[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo596[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo597[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo598[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo599[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo600[label = "", fillcolor = "#ffffff", group = 10]; 
+
+Fila1 -> nodo501; 
+nodo501 -> nodo502
+nodo502 -> nodo503
+nodo503 -> nodo504
+nodo504 -> nodo505
+nodo505 -> nodo506
+nodo506 -> nodo507
+nodo507 -> nodo508
+nodo508 -> nodo509
+nodo509 -> nodo510
+Fila2 -> nodo511; 
+nodo511 -> nodo512
+nodo512 -> nodo513
+nodo513 -> nodo514
+nodo514 -> nodo515
+nodo515 -> nodo516
+nodo516 -> nodo517
+nodo517 -> nodo518
+nodo518 -> nodo519
+nodo519 -> nodo520
+Fila3 -> nodo521; 
+nodo521 -> nodo522
+nodo522 -> nodo523
+nodo523 -> nodo524
+nodo524 -> nodo525
+nodo525 -> nodo526
+nodo526 -> nodo527
+nodo527 -> nodo528
+nodo528 -> nodo529
+nodo529 -> nodo530
+Fila4 -> nodo531; 
+nodo531 -> nodo532
+nodo532 -> nodo533
+nodo533 -> nodo534
+nodo534 -> nodo535
+nodo535 -> nodo536
+nodo536 -> nodo537
+nodo537 -> nodo538
+nodo538 -> nodo539
+nodo539 -> nodo540
+Fila5 -> nodo541; 
+nodo541 -> nodo542
+nodo542 -> nodo543
+nodo543 -> nodo544
+nodo544 -> nodo545
+nodo545 -> nodo546
+nodo546 -> nodo547
+nodo547 -> nodo548
+nodo548 -> nodo549
+nodo549 -> nodo550
+Fila6 -> nodo551; 
+nodo551 -> nodo552
+nodo552 -> nodo553
+nodo553 -> nodo554
+nodo554 -> nodo555
+nodo555 -> nodo556
+nodo556 -> nodo557
+nodo557 -> nodo558
+nodo558 -> nodo559
+nodo559 -> nodo560
+Fila7 -> nodo561; 
+nodo561 -> nodo562
+nodo562 -> nodo563
+nodo563 -> nodo564
+nodo564 -> nodo565
+nodo565 -> nodo566
+nodo566 -> nodo567
+nodo567 -> nodo568
+nodo568 -> nodo569
+nodo569 -> nodo570
+Fila8 -> nodo571; 
+nodo571 -> nodo572
+nodo572 -> nodo573
+nodo573 -> nodo574
+nodo574 -> nodo575
+nodo575 -> nodo576
+nodo576 -> nodo577
+nodo577 -> nodo578
+nodo578 -> nodo579
+nodo579 -> nodo580
+Fila9 -> nodo581; 
+nodo581 -> nodo582
+nodo582 -> nodo583
+nodo583 -> nodo584
+nodo584 -> nodo585
+nodo585 -> nodo586
+nodo586 -> nodo587
+nodo587 -> nodo588
+nodo588 -> nodo589
+nodo589 -> nodo590
+Fila10 -> nodo591; 
+nodo591 -> nodo592
+nodo592 -> nodo593
+nodo593 -> nodo594
+nodo594 -> nodo595
+nodo595 -> nodo596
+nodo596 -> nodo597
+nodo597 -> nodo598
+nodo598 -> nodo599
+nodo599 -> nodo600
+
+{ rank = same; Fila1; nodo501; nodo502; nodo503; nodo504; nodo505; nodo506; nodo507; nodo508; nodo509; nodo510} 
+{ rank = same; Fila2; nodo511; nodo512; nodo513; nodo514; nodo515; nodo516; nodo517; nodo518; nodo519; nodo520} 
+{ rank = same; Fila3; nodo521; nodo522; nodo523; nodo524; nodo525; nodo526; nodo527; nodo528; nodo529; nodo530} 
+{ rank = same; Fila4; nodo531; nodo532; nodo533; nodo534; nodo535; nodo536; nodo537; nodo538; nodo539; nodo540} 
+{ rank = same; Fila5; nodo541; nodo542; nodo543; nodo544; nodo545; nodo546; nodo547; nodo548; nodo549; nodo550} 
+{ rank = same; Fila6; nodo551; nodo552; nodo553; nodo554; nodo555; nodo556; nodo557; nodo558; nodo559; nodo560} 
+{ rank = same; Fila7; nodo561; nodo562; nodo563; nodo564; nodo565; nodo566; nodo567; nodo568; nodo569; nodo570} 
+{ rank = same; Fila8; nodo571; nodo572; nodo573; nodo574; nodo575; nodo576; nodo577; nodo578; nodo579; nodo580} 
+{ rank = same; Fila9; nodo581; nodo582; nodo583; nodo584; nodo585; nodo586; nodo587; nodo588; nodo589; nodo590} 
+{ rank = same; Fila10; nodo591; nodo592; nodo593; nodo594; nodo595; nodo596; nodo597; nodo598; nodo599; nodo600} 
+} 
+ } 
+ 

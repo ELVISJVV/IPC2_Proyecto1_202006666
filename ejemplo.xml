@@ -1,0 +1,47 @@
+<pacientes>
+    <paciente>
+        <nodo1 name="nodo">Texto nod01</nodo1>
+        <nodo2 name="nodo">Texto nod02</nodo2>
+        <nodo3 name="nodo">Texto nod03</nodo3>
+    </paciente>
+    <paciente>
+        <nodo1 name="nodo">Texto nod01</nodo1>
+        <nodo2 name="nodo">Texto nod02</nodo2>
+        <nodo3 name="nodo">Texto nod03</nodo3>
+    </paciente>
+    <paciente>
+        <nodo1 name="nodo">Texto nod01</nodo1>
+        <nodo2 name="nodo">Texto nod02</nodo2>
+        <nodo3 name="nodo">Texto nod03</nodo3>
+    </paciente>
+    <paciente>
+        <nodo1 name="nodo">Texto nod01</nodo1>
+        <nodo2 name="nodo">Texto nod02</nodo2>
+        <nodo3 name="nodo">Texto nod03</nodo3>
+    </paciente>
+    <paciente>
+        <nodo1 name="nodo">Texto nod01</nodo1>
+        <nodo2 name="nodo">Texto nod02</nodo2>
+        <nodo3 name="nodo">Texto nod03</nodo3>
+    </paciente>
+    <paciente>
+        <nodo1 name="nodo">Texto nod01</nodo1>
+        <nodo2 name="nodo">Texto nod02</nodo2>
+        <nodo3 name="nodo">Texto nod03</nodo3>
+    </paciente>
+    <paciente>
+        <nodo1 name="nodo">Texto nod01</nodo1>
+        <nodo2 name="nodo">Texto nod02</nodo2>
+        <nodo3 name="nodo">Texto nod03</nodo3>
+    </paciente>
+    <paciente>
+        <nodo1 name="nodo">Texto nod01</nodo1>
+        <nodo2 name="nodo">Texto nod02</nodo2>
+        <nodo3 name="nodo">Texto nod03</nodo3>
+    </paciente>
+    <paciente>
+        <nodo1 name="nodo">Texto nod01</nodo1>
+        <nodo2 name="nodo">Texto nod02</nodo2>
+        <nodo3 name="nodo">Texto nod03</nodo3>
+    </paciente>
+</pacientes>

@@ -6,7 +6,7 @@
          <edad>24</edad>
       </datospersonales>
       <periodos>12</periodos>
-      <m>10</m>
+      <m>30</m>
       <rejilla>
          <celda f="1" c="5" />
          <celda f="2" c="5" />
@@ -23,7 +23,7 @@
       <periodos>5</periodos>
       <m>20</m>
       <rejilla>
-         <celda f="5" c="6" />
+         <celda f="0" c="6" />
          <celda f="5" c="7" />
          <celda f="5" c="8" />
          <celda f="5" c="11" />

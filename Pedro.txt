@@ -1,0 +1,927 @@
+digraph L{ 
+ node[shape= square, fillcolor="#C0C0C0", style= filled]; 
+ 
+ edge[style = invis]; 
+ ranksep = 0 
+ nodesep = 0.1  
+ bgcolor = "#EDBB99 " 
+ subgraph cluster_A{ 
+ 
+ label = "Pedro" 
+ bgcolor = "#20B2AA" 
+ fontcolor = white 
+ fontsize = 30 
+ raiz[label= "", style = invis] 
+ edge[dir = "both"] 
+ Fila1[label = "1", group = 0]; 
+Fila2[label = "2", group = 0]; 
+Fila3[label = "3", group = 0]; 
+Fila4[label = "4", group = 0]; 
+Fila5[label = "5", group = 0]; 
+Fila6[label = "6", group = 0]; 
+Fila7[label = "7", group = 0]; 
+Fila8[label = "8", group = 0]; 
+Fila9[label = "9", group = 0]; 
+Fila10[label = "10", group = 0]; 
+Fila11[label = "11", group = 0]; 
+Fila12[label = "12", group = 0]; 
+Fila13[label = "13", group = 0]; 
+Fila14[label = "14", group = 0]; 
+Fila15[label = "15", group = 0]; 
+Fila16[label = "16", group = 0]; 
+Fila17[label = "17", group = 0]; 
+Fila18[label = "18", group = 0]; 
+Fila19[label = "19", group = 0]; 
+Fila20[label = "20", group = 0]; 
+
+Fila1->Fila2; 
+Fila2->Fila3; 
+Fila3->Fila4; 
+Fila4->Fila5; 
+Fila5->Fila6; 
+Fila6->Fila7; 
+Fila7->Fila8; 
+Fila8->Fila9; 
+Fila9->Fila10; 
+Fila10->Fila11; 
+Fila11->Fila12; 
+Fila12->Fila13; 
+Fila13->Fila14; 
+Fila14->Fila15; 
+Fila15->Fila16; 
+Fila16->Fila17; 
+Fila17->Fila18; 
+Fila18->Fila19; 
+Fila19->Fila20; 
+
+Columna1[label = "1", group = 1]; 
+Columna2[label = "2", group = 2]; 
+Columna3[label = "3", group = 3]; 
+Columna4[label = "4", group = 4]; 
+Columna5[label = "5", group = 5]; 
+Columna6[label = "6", group = 6]; 
+Columna7[label = "7", group = 7]; 
+Columna8[label = "8", group = 8]; 
+Columna9[label = "9", group = 9]; 
+Columna10[label = "10", group = 10]; 
+Columna11[label = "11", group = 11]; 
+Columna12[label = "12", group = 12]; 
+Columna13[label = "13", group = 13]; 
+Columna14[label = "14", group = 14]; 
+Columna15[label = "15", group = 15]; 
+Columna16[label = "16", group = 16]; 
+Columna17[label = "17", group = 17]; 
+Columna18[label = "18", group = 18]; 
+Columna19[label = "19", group = 19]; 
+Columna20[label = "20", group = 20]; 
+
+Columna1->Columna2; 
+Columna2->Columna3; 
+Columna3->Columna4; 
+Columna4->Columna5; 
+Columna5->Columna6; 
+Columna6->Columna7; 
+Columna7->Columna8; 
+Columna8->Columna9; 
+Columna9->Columna10; 
+Columna10->Columna11; 
+Columna11->Columna12; 
+Columna12->Columna13; 
+Columna13->Columna14; 
+Columna14->Columna15; 
+Columna15->Columna16; 
+Columna16->Columna17; 
+Columna17->Columna18; 
+Columna18->Columna19; 
+Columna19->Columna20; 
+
+ raiz -> Fila1 
+ raiz -> Columna1 
+ 
+{rank = same; raiz; Columna1; Columna2; Columna3; Columna4; Columna5; Columna6; Columna7; Columna8; Columna9; Columna10; Columna11; Columna12; Columna13; Columna14; Columna15; Columna16; Columna17; Columna18; Columna19; Columna20} 
+ 
+nodo1[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo2[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo3[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo4[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo5[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo6[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo7[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo8[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo9[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo10[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo111[label = "", fillcolor = "#ffffff", group = 11]; 
+nodo112[label = "", fillcolor = "#ffffff", group = 12]; 
+nodo113[label = "", fillcolor = "#ffffff", group = 13]; 
+nodo114[label = "", fillcolor = "#ffffff", group = 14]; 
+nodo115[label = "", fillcolor = "#ffffff", group = 15]; 
+nodo116[label = "", fillcolor = "#ffffff", group = 16]; 
+nodo117[label = "", fillcolor = "#ffffff", group = 17]; 
+nodo118[label = "", fillcolor = "#ffffff", group = 18]; 
+nodo119[label = "", fillcolor = "#ffffff", group = 19]; 
+nodo120[label = "", fillcolor = "#ffffff", group = 20]; 
+nodo11[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo12[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo13[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo14[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo15[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo16[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo17[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo18[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo19[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo20[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo131[label = "", fillcolor = "#ffffff", group = 11]; 
+nodo132[label = "", fillcolor = "#ffffff", group = 12]; 
+nodo133[label = "", fillcolor = "#ffffff", group = 13]; 
+nodo134[label = "", fillcolor = "#ffffff", group = 14]; 
+nodo135[label = "", fillcolor = "#ffffff", group = 15]; 
+nodo136[label = "", fillcolor = "#ffffff", group = 16]; 
+nodo137[label = "", fillcolor = "#ffffff", group = 17]; 
+nodo138[label = "", fillcolor = "#ffffff", group = 18]; 
+nodo139[label = "", fillcolor = "#ffffff", group = 19]; 
+nodo140[label = "", fillcolor = "#ffffff", group = 20]; 
+nodo21[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo22[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo23[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo24[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo25[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo26[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo27[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo28[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo29[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo30[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo151[label = "", fillcolor = "#ffffff", group = 11]; 
+nodo152[label = "", fillcolor = "#ffffff", group = 12]; 
+nodo153[label = "", fillcolor = "#ffffff", group = 13]; 
+nodo154[label = "", fillcolor = "#ffffff", group = 14]; 
+nodo155[label = "", fillcolor = "#ffffff", group = 15]; 
+nodo156[label = "", fillcolor = "#ffffff", group = 16]; 
+nodo157[label = "", fillcolor = "#ffffff", group = 17]; 
+nodo158[label = "", fillcolor = "#ffffff", group = 18]; 
+nodo159[label = "", fillcolor = "#ffffff", group = 19]; 
+nodo160[label = "", fillcolor = "#ffffff", group = 20]; 
+nodo31[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo32[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo33[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo34[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo35[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo36[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo37[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo38[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo39[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo40[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo171[label = "", fillcolor = "#ffffff", group = 11]; 
+nodo172[label = "", fillcolor = "#ffffff", group = 12]; 
+nodo173[label = "", fillcolor = "#ffffff", group = 13]; 
+nodo174[label = "", fillcolor = "#ffffff", group = 14]; 
+nodo175[label = "", fillcolor = "#ffffff", group = 15]; 
+nodo176[label = "", fillcolor = "#ffffff", group = 16]; 
+nodo177[label = "", fillcolor = "#ffffff", group = 17]; 
+nodo178[label = "", fillcolor = "#ffffff", group = 18]; 
+nodo179[label = "", fillcolor = "#ffffff", group = 19]; 
+nodo180[label = "", fillcolor = "#ffffff", group = 20]; 
+nodo41[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo42[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo43[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo44[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo45[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo46[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo47[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo48[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo49[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo50[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo191[label = "", fillcolor = "#ffffff", group = 11]; 
+nodo192[label = "", fillcolor = "#ffffff", group = 12]; 
+nodo193[label = "", fillcolor = "#ffffff", group = 13]; 
+nodo194[label = "", fillcolor = "#ffffff", group = 14]; 
+nodo195[label = "", fillcolor = "#ffffff", group = 15]; 
+nodo196[label = "", fillcolor = "#ffffff", group = 16]; 
+nodo197[label = "", fillcolor = "#ffffff", group = 17]; 
+nodo198[label = "", fillcolor = "#ffffff", group = 18]; 
+nodo199[label = "", fillcolor = "#ffffff", group = 19]; 
+nodo200[label = "", fillcolor = "#ffffff", group = 20]; 
+nodo51[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo52[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo53[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo54[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo55[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo56[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo57[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo58[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo59[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo60[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo211[label = "", fillcolor = "#ffffff", group = 11]; 
+nodo212[label = "", fillcolor = "#ffffff", group = 12]; 
+nodo213[label = "", fillcolor = "#ffffff", group = 13]; 
+nodo214[label = "", fillcolor = "#ffffff", group = 14]; 
+nodo215[label = "", fillcolor = "#ffffff", group = 15]; 
+nodo216[label = "", fillcolor = "#ffffff", group = 16]; 
+nodo217[label = "", fillcolor = "#ffffff", group = 17]; 
+nodo218[label = "", fillcolor = "#ffffff", group = 18]; 
+nodo219[label = "", fillcolor = "#ffffff", group = 19]; 
+nodo220[label = "", fillcolor = "#ffffff", group = 20]; 
+nodo61[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo62[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo63[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo64[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo65[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo66[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo67[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo68[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo69[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo70[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo231[label = "", fillcolor = "#ffffff", group = 11]; 
+nodo232[label = "", fillcolor = "#ffffff", group = 12]; 
+nodo233[label = "", fillcolor = "#ffffff", group = 13]; 
+nodo234[label = "", fillcolor = "#ffffff", group = 14]; 
+nodo235[label = "", fillcolor = "#ffffff", group = 15]; 
+nodo236[label = "", fillcolor = "#ffffff", group = 16]; 
+nodo237[label = "", fillcolor = "#ffffff", group = 17]; 
+nodo238[label = "", fillcolor = "#ffffff", group = 18]; 
+nodo239[label = "", fillcolor = "#ffffff", group = 19]; 
+nodo240[label = "", fillcolor = "#ffffff", group = 20]; 
+nodo71[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo72[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo73[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo74[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo75[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo76[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo77[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo78[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo79[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo80[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo251[label = "", fillcolor = "#ffffff", group = 11]; 
+nodo252[label = "", fillcolor = "#ffffff", group = 12]; 
+nodo253[label = "", fillcolor = "#ffffff", group = 13]; 
+nodo254[label = "", fillcolor = "#ffffff", group = 14]; 
+nodo255[label = "", fillcolor = "#ffffff", group = 15]; 
+nodo256[label = "", fillcolor = "#ffffff", group = 16]; 
+nodo257[label = "", fillcolor = "#ffffff", group = 17]; 
+nodo258[label = "", fillcolor = "#ffffff", group = 18]; 
+nodo259[label = "", fillcolor = "#ffffff", group = 19]; 
+nodo260[label = "", fillcolor = "#ffffff", group = 20]; 
+nodo81[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo82[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo83[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo84[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo85[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo86[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo87[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo88[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo89[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo90[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo271[label = "", fillcolor = "#ffffff", group = 11]; 
+nodo272[label = "", fillcolor = "#ffffff", group = 12]; 
+nodo273[label = "", fillcolor = "#ffffff", group = 13]; 
+nodo274[label = "", fillcolor = "#ffffff", group = 14]; 
+nodo275[label = "", fillcolor = "#ffffff", group = 15]; 
+nodo276[label = "", fillcolor = "#ffffff", group = 16]; 
+nodo277[label = "", fillcolor = "#ffffff", group = 17]; 
+nodo278[label = "", fillcolor = "#ffffff", group = 18]; 
+nodo279[label = "", fillcolor = "#ffffff", group = 19]; 
+nodo280[label = "", fillcolor = "#ffffff", group = 20]; 
+nodo91[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo92[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo93[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo94[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo95[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo96[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo97[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo98[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo99[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo100[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo291[label = "", fillcolor = "#ffffff", group = 11]; 
+nodo292[label = "", fillcolor = "#ffffff", group = 12]; 
+nodo293[label = "", fillcolor = "#ffffff", group = 13]; 
+nodo294[label = "", fillcolor = "#ffffff", group = 14]; 
+nodo295[label = "", fillcolor = "#ffffff", group = 15]; 
+nodo296[label = "", fillcolor = "#ffffff", group = 16]; 
+nodo297[label = "", fillcolor = "#ffffff", group = 17]; 
+nodo298[label = "", fillcolor = "#ffffff", group = 18]; 
+nodo299[label = "", fillcolor = "#ffffff", group = 19]; 
+nodo300[label = "", fillcolor = "#ffffff", group = 20]; 
+nodo301[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo302[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo303[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo304[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo305[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo306[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo307[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo308[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo309[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo310[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo311[label = "", fillcolor = "#ffffff", group = 11]; 
+nodo312[label = "", fillcolor = "#ffffff", group = 12]; 
+nodo313[label = "", fillcolor = "#ffffff", group = 13]; 
+nodo314[label = "", fillcolor = "#ffffff", group = 14]; 
+nodo315[label = "", fillcolor = "#ffffff", group = 15]; 
+nodo316[label = "", fillcolor = "#ffffff", group = 16]; 
+nodo317[label = "", fillcolor = "#ffffff", group = 17]; 
+nodo318[label = "", fillcolor = "#ffffff", group = 18]; 
+nodo319[label = "", fillcolor = "#ffffff", group = 19]; 
+nodo320[label = "", fillcolor = "#ffffff", group = 20]; 
+nodo321[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo322[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo323[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo324[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo325[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo326[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo327[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo328[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo329[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo330[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo331[label = "", fillcolor = "#ffffff", group = 11]; 
+nodo332[label = "", fillcolor = "#ffffff", group = 12]; 
+nodo333[label = "", fillcolor = "#ffffff", group = 13]; 
+nodo334[label = "", fillcolor = "#ffffff", group = 14]; 
+nodo335[label = "", fillcolor = "#ffffff", group = 15]; 
+nodo336[label = "", fillcolor = "#ffffff", group = 16]; 
+nodo337[label = "", fillcolor = "#ffffff", group = 17]; 
+nodo338[label = "", fillcolor = "#ffffff", group = 18]; 
+nodo339[label = "", fillcolor = "#ffffff", group = 19]; 
+nodo340[label = "", fillcolor = "#ffffff", group = 20]; 
+nodo341[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo342[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo343[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo344[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo345[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo346[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo347[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo348[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo349[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo350[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo351[label = "", fillcolor = "#ffffff", group = 11]; 
+nodo352[label = "", fillcolor = "#ffffff", group = 12]; 
+nodo353[label = "", fillcolor = "#ffffff", group = 13]; 
+nodo354[label = "", fillcolor = "#ffffff", group = 14]; 
+nodo355[label = "", fillcolor = "#ffffff", group = 15]; 
+nodo356[label = "", fillcolor = "#ffffff", group = 16]; 
+nodo357[label = "", fillcolor = "#ffffff", group = 17]; 
+nodo358[label = "", fillcolor = "#ffffff", group = 18]; 
+nodo359[label = "", fillcolor = "#ffffff", group = 19]; 
+nodo360[label = "", fillcolor = "#ffffff", group = 20]; 
+nodo361[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo362[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo363[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo364[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo365[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo366[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo367[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo368[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo369[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo370[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo371[label = "", fillcolor = "#ffffff", group = 11]; 
+nodo372[label = "", fillcolor = "#ffffff", group = 12]; 
+nodo373[label = "", fillcolor = "#ffffff", group = 13]; 
+nodo374[label = "", fillcolor = "#ffffff", group = 14]; 
+nodo375[label = "", fillcolor = "#ffffff", group = 15]; 
+nodo376[label = "", fillcolor = "#ffffff", group = 16]; 
+nodo377[label = "", fillcolor = "#ffffff", group = 17]; 
+nodo378[label = "", fillcolor = "#ffffff", group = 18]; 
+nodo379[label = "", fillcolor = "#ffffff", group = 19]; 
+nodo380[label = "", fillcolor = "#ffffff", group = 20]; 
+nodo381[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo382[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo383[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo384[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo385[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo386[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo387[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo388[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo389[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo390[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo391[label = "", fillcolor = "#ffffff", group = 11]; 
+nodo392[label = "", fillcolor = "#ffffff", group = 12]; 
+nodo393[label = "", fillcolor = "#ffffff", group = 13]; 
+nodo394[label = "", fillcolor = "#ffffff", group = 14]; 
+nodo395[label = "", fillcolor = "#ffffff", group = 15]; 
+nodo396[label = "", fillcolor = "#ffffff", group = 16]; 
+nodo397[label = "", fillcolor = "#ffffff", group = 17]; 
+nodo398[label = "", fillcolor = "#ffffff", group = 18]; 
+nodo399[label = "", fillcolor = "#ffffff", group = 19]; 
+nodo400[label = "", fillcolor = "#ffffff", group = 20]; 
+nodo401[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo402[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo403[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo404[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo405[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo406[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo407[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo408[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo409[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo410[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo411[label = "", fillcolor = "#ffffff", group = 11]; 
+nodo412[label = "", fillcolor = "#ffffff", group = 12]; 
+nodo413[label = "", fillcolor = "#ffffff", group = 13]; 
+nodo414[label = "", fillcolor = "#ffffff", group = 14]; 
+nodo415[label = "", fillcolor = "#ffffff", group = 15]; 
+nodo416[label = "", fillcolor = "#ffffff", group = 16]; 
+nodo417[label = "", fillcolor = "#ffffff", group = 17]; 
+nodo418[label = "", fillcolor = "#ffffff", group = 18]; 
+nodo419[label = "", fillcolor = "#ffffff", group = 19]; 
+nodo420[label = "", fillcolor = "#ffffff", group = 20]; 
+nodo421[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo422[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo423[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo424[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo425[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo426[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo427[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo428[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo429[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo430[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo431[label = "", fillcolor = "#ffffff", group = 11]; 
+nodo432[label = "", fillcolor = "#ffffff", group = 12]; 
+nodo433[label = "", fillcolor = "#ffffff", group = 13]; 
+nodo434[label = "", fillcolor = "#ffffff", group = 14]; 
+nodo435[label = "", fillcolor = "#ffffff", group = 15]; 
+nodo436[label = "", fillcolor = "#ffffff", group = 16]; 
+nodo437[label = "", fillcolor = "#ffffff", group = 17]; 
+nodo438[label = "", fillcolor = "#ffffff", group = 18]; 
+nodo439[label = "", fillcolor = "#ffffff", group = 19]; 
+nodo440[label = "", fillcolor = "#ffffff", group = 20]; 
+nodo441[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo442[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo443[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo444[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo445[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo446[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo447[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo448[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo449[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo450[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo451[label = "", fillcolor = "#ffffff", group = 11]; 
+nodo452[label = "", fillcolor = "#ffffff", group = 12]; 
+nodo453[label = "", fillcolor = "#ffffff", group = 13]; 
+nodo454[label = "", fillcolor = "#ffffff", group = 14]; 
+nodo455[label = "", fillcolor = "#ffffff", group = 15]; 
+nodo456[label = "", fillcolor = "#ffffff", group = 16]; 
+nodo457[label = "", fillcolor = "#ffffff", group = 17]; 
+nodo458[label = "", fillcolor = "#ffffff", group = 18]; 
+nodo459[label = "", fillcolor = "#ffffff", group = 19]; 
+nodo460[label = "", fillcolor = "#ffffff", group = 20]; 
+nodo461[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo462[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo463[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo464[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo465[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo466[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo467[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo468[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo469[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo470[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo471[label = "", fillcolor = "#ffffff", group = 11]; 
+nodo472[label = "", fillcolor = "#ffffff", group = 12]; 
+nodo473[label = "", fillcolor = "#ffffff", group = 13]; 
+nodo474[label = "", fillcolor = "#ffffff", group = 14]; 
+nodo475[label = "", fillcolor = "#ffffff", group = 15]; 
+nodo476[label = "", fillcolor = "#ffffff", group = 16]; 
+nodo477[label = "", fillcolor = "#ffffff", group = 17]; 
+nodo478[label = "", fillcolor = "#ffffff", group = 18]; 
+nodo479[label = "", fillcolor = "#ffffff", group = 19]; 
+nodo480[label = "", fillcolor = "#ffffff", group = 20]; 
+nodo481[label = "", fillcolor = "#ffffff", group = 1]; 
+nodo482[label = "", fillcolor = "#ffffff", group = 2]; 
+nodo483[label = "", fillcolor = "#ffffff", group = 3]; 
+nodo484[label = "", fillcolor = "#ffffff", group = 4]; 
+nodo485[label = "", fillcolor = "#ffffff", group = 5]; 
+nodo486[label = "", fillcolor = "#ffffff", group = 6]; 
+nodo487[label = "", fillcolor = "#ffffff", group = 7]; 
+nodo488[label = "", fillcolor = "#ffffff", group = 8]; 
+nodo489[label = "", fillcolor = "#ffffff", group = 9]; 
+nodo490[label = "", fillcolor = "#ffffff", group = 10]; 
+nodo491[label = "", fillcolor = "#ffffff", group = 11]; 
+nodo492[label = "", fillcolor = "#ffffff", group = 12]; 
+nodo493[label = "", fillcolor = "#ffffff", group = 13]; 
+nodo494[label = "", fillcolor = "#ffffff", group = 14]; 
+nodo495[label = "", fillcolor = "#ffffff", group = 15]; 
+nodo496[label = "", fillcolor = "#ffffff", group = 16]; 
+nodo497[label = "", fillcolor = "#ffffff", group = 17]; 
+nodo498[label = "", fillcolor = "#ffffff", group = 18]; 
+nodo499[label = "", fillcolor = "#ffffff", group = 19]; 
+nodo500[label = "", fillcolor = "#ffffff", group = 20]; 
+
+Fila1 -> nodo1; 
+nodo1 -> nodo2
+nodo2 -> nodo3
+nodo3 -> nodo4
+nodo4 -> nodo5
+nodo5 -> nodo6
+nodo6 -> nodo7
+nodo7 -> nodo8
+nodo8 -> nodo9
+nodo9 -> nodo10
+nodo10 -> nodo111
+nodo111 -> nodo112
+nodo112 -> nodo113
+nodo113 -> nodo114
+nodo114 -> nodo115
+nodo115 -> nodo116
+nodo116 -> nodo117
+nodo117 -> nodo118
+nodo118 -> nodo119
+nodo119 -> nodo120
+Fila2 -> nodo11; 
+nodo11 -> nodo12
+nodo12 -> nodo13
+nodo13 -> nodo14
+nodo14 -> nodo15
+nodo15 -> nodo16
+nodo16 -> nodo17
+nodo17 -> nodo18
+nodo18 -> nodo19
+nodo19 -> nodo20
+nodo20 -> nodo131
+nodo131 -> nodo132
+nodo132 -> nodo133
+nodo133 -> nodo134
+nodo134 -> nodo135
+nodo135 -> nodo136
+nodo136 -> nodo137
+nodo137 -> nodo138
+nodo138 -> nodo139
+nodo139 -> nodo140
+Fila3 -> nodo21; 
+nodo21 -> nodo22
+nodo22 -> nodo23
+nodo23 -> nodo24
+nodo24 -> nodo25
+nodo25 -> nodo26
+nodo26 -> nodo27
+nodo27 -> nodo28
+nodo28 -> nodo29
+nodo29 -> nodo30
+nodo30 -> nodo151
+nodo151 -> nodo152
+nodo152 -> nodo153
+nodo153 -> nodo154
+nodo154 -> nodo155
+nodo155 -> nodo156
+nodo156 -> nodo157
+nodo157 -> nodo158
+nodo158 -> nodo159
+nodo159 -> nodo160
+Fila4 -> nodo31; 
+nodo31 -> nodo32
+nodo32 -> nodo33
+nodo33 -> nodo34
+nodo34 -> nodo35
+nodo35 -> nodo36
+nodo36 -> nodo37
+nodo37 -> nodo38
+nodo38 -> nodo39
+nodo39 -> nodo40
+nodo40 -> nodo171
+nodo171 -> nodo172
+nodo172 -> nodo173
+nodo173 -> nodo174
+nodo174 -> nodo175
+nodo175 -> nodo176
+nodo176 -> nodo177
+nodo177 -> nodo178
+nodo178 -> nodo179
+nodo179 -> nodo180
+Fila5 -> nodo41; 
+nodo41 -> nodo42
+nodo42 -> nodo43
+nodo43 -> nodo44
+nodo44 -> nodo45
+nodo45 -> nodo46
+nodo46 -> nodo47
+nodo47 -> nodo48
+nodo48 -> nodo49
+nodo49 -> nodo50
+nodo50 -> nodo191
+nodo191 -> nodo192
+nodo192 -> nodo193
+nodo193 -> nodo194
+nodo194 -> nodo195
+nodo195 -> nodo196
+nodo196 -> nodo197
+nodo197 -> nodo198
+nodo198 -> nodo199
+nodo199 -> nodo200
+Fila6 -> nodo51; 
+nodo51 -> nodo52
+nodo52 -> nodo53
+nodo53 -> nodo54
+nodo54 -> nodo55
+nodo55 -> nodo56
+nodo56 -> nodo57
+nodo57 -> nodo58
+nodo58 -> nodo59
+nodo59 -> nodo60
+nodo60 -> nodo211
+nodo211 -> nodo212
+nodo212 -> nodo213
+nodo213 -> nodo214
+nodo214 -> nodo215
+nodo215 -> nodo216
+nodo216 -> nodo217
+nodo217 -> nodo218
+nodo218 -> nodo219
+nodo219 -> nodo220
+Fila7 -> nodo61; 
+nodo61 -> nodo62
+nodo62 -> nodo63
+nodo63 -> nodo64
+nodo64 -> nodo65
+nodo65 -> nodo66
+nodo66 -> nodo67
+nodo67 -> nodo68
+nodo68 -> nodo69
+nodo69 -> nodo70
+nodo70 -> nodo231
+nodo231 -> nodo232
+nodo232 -> nodo233
+nodo233 -> nodo234
+nodo234 -> nodo235
+nodo235 -> nodo236
+nodo236 -> nodo237
+nodo237 -> nodo238
+nodo238 -> nodo239
+nodo239 -> nodo240
+Fila8 -> nodo71; 
+nodo71 -> nodo72
+nodo72 -> nodo73
+nodo73 -> nodo74
+nodo74 -> nodo75
+nodo75 -> nodo76
+nodo76 -> nodo77
+nodo77 -> nodo78
+nodo78 -> nodo79
+nodo79 -> nodo80
+nodo80 -> nodo251
+nodo251 -> nodo252
+nodo252 -> nodo253
+nodo253 -> nodo254
+nodo254 -> nodo255
+nodo255 -> nodo256
+nodo256 -> nodo257
+nodo257 -> nodo258
+nodo258 -> nodo259
+nodo259 -> nodo260
+Fila9 -> nodo81; 
+nodo81 -> nodo82
+nodo82 -> nodo83
+nodo83 -> nodo84
+nodo84 -> nodo85
+nodo85 -> nodo86
+nodo86 -> nodo87
+nodo87 -> nodo88
+nodo88 -> nodo89
+nodo89 -> nodo90
+nodo90 -> nodo271
+nodo271 -> nodo272
+nodo272 -> nodo273
+nodo273 -> nodo274
+nodo274 -> nodo275
+nodo275 -> nodo276
+nodo276 -> nodo277
+nodo277 -> nodo278
+nodo278 -> nodo279
+nodo279 -> nodo280
+Fila10 -> nodo91; 
+nodo91 -> nodo92
+nodo92 -> nodo93
+nodo93 -> nodo94
+nodo94 -> nodo95
+nodo95 -> nodo96
+nodo96 -> nodo97
+nodo97 -> nodo98
+nodo98 -> nodo99
+nodo99 -> nodo100
+nodo100 -> nodo291
+nodo291 -> nodo292
+nodo292 -> nodo293
+nodo293 -> nodo294
+nodo294 -> nodo295
+nodo295 -> nodo296
+nodo296 -> nodo297
+nodo297 -> nodo298
+nodo298 -> nodo299
+nodo299 -> nodo300
+Fila11 -> nodo301; 
+nodo301 -> nodo302
+nodo302 -> nodo303
+nodo303 -> nodo304
+nodo304 -> nodo305
+nodo305 -> nodo306
+nodo306 -> nodo307
+nodo307 -> nodo308
+nodo308 -> nodo309
+nodo309 -> nodo310
+nodo310 -> nodo311
+nodo311 -> nodo312
+nodo312 -> nodo313
+nodo313 -> nodo314
+nodo314 -> nodo315
+nodo315 -> nodo316
+nodo316 -> nodo317
+nodo317 -> nodo318
+nodo318 -> nodo319
+nodo319 -> nodo320
+Fila12 -> nodo321; 
+nodo321 -> nodo322
+nodo322 -> nodo323
+nodo323 -> nodo324
+nodo324 -> nodo325
+nodo325 -> nodo326
+nodo326 -> nodo327
+nodo327 -> nodo328
+nodo328 -> nodo329
+nodo329 -> nodo330
+nodo330 -> nodo331
+nodo331 -> nodo332
+nodo332 -> nodo333
+nodo333 -> nodo334
+nodo334 -> nodo335
+nodo335 -> nodo336
+nodo336 -> nodo337
+nodo337 -> nodo338
+nodo338 -> nodo339
+nodo339 -> nodo340
+Fila13 -> nodo341; 
+nodo341 -> nodo342
+nodo342 -> nodo343
+nodo343 -> nodo344
+nodo344 -> nodo345
+nodo345 -> nodo346
+nodo346 -> nodo347
+nodo347 -> nodo348
+nodo348 -> nodo349
+nodo349 -> nodo350
+nodo350 -> nodo351
+nodo351 -> nodo352
+nodo352 -> nodo353
+nodo353 -> nodo354
+nodo354 -> nodo355
+nodo355 -> nodo356
+nodo356 -> nodo357
+nodo357 -> nodo358
+nodo358 -> nodo359
+nodo359 -> nodo360
+Fila14 -> nodo361; 
+nodo361 -> nodo362
+nodo362 -> nodo363
+nodo363 -> nodo364
+nodo364 -> nodo365
+nodo365 -> nodo366
+nodo366 -> nodo367
+nodo367 -> nodo368
+nodo368 -> nodo369
+nodo369 -> nodo370
+nodo370 -> nodo371
+nodo371 -> nodo372
+nodo372 -> nodo373
+nodo373 -> nodo374
+nodo374 -> nodo375
+nodo375 -> nodo376
+nodo376 -> nodo377
+nodo377 -> nodo378
+nodo378 -> nodo379
+nodo379 -> nodo380
+Fila15 -> nodo381; 
+nodo381 -> nodo382
+nodo382 -> nodo383
+nodo383 -> nodo384
+nodo384 -> nodo385
+nodo385 -> nodo386
+nodo386 -> nodo387
+nodo387 -> nodo388
+nodo388 -> nodo389
+nodo389 -> nodo390
+nodo390 -> nodo391
+nodo391 -> nodo392
+nodo392 -> nodo393
+nodo393 -> nodo394
+nodo394 -> nodo395
+nodo395 -> nodo396
+nodo396 -> nodo397
+nodo397 -> nodo398
+nodo398 -> nodo399
+nodo399 -> nodo400
+Fila16 -> nodo401; 
+nodo401 -> nodo402
+nodo402 -> nodo403
+nodo403 -> nodo404
+nodo404 -> nodo405
+nodo405 -> nodo406
+nodo406 -> nodo407
+nodo407 -> nodo408
+nodo408 -> nodo409
+nodo409 -> nodo410
+nodo410 -> nodo411
+nodo411 -> nodo412
+nodo412 -> nodo413
+nodo413 -> nodo414
+nodo414 -> nodo415
+nodo415 -> nodo416
+nodo416 -> nodo417
+nodo417 -> nodo418
+nodo418 -> nodo419
+nodo419 -> nodo420
+Fila17 -> nodo421; 
+nodo421 -> nodo422
+nodo422 -> nodo423
+nodo423 -> nodo424
+nodo424 -> nodo425
+nodo425 -> nodo426
+nodo426 -> nodo427
+nodo427 -> nodo428
+nodo428 -> nodo429
+nodo429 -> nodo430
+nodo430 -> nodo431
+nodo431 -> nodo432
+nodo432 -> nodo433
+nodo433 -> nodo434
+nodo434 -> nodo435
+nodo435 -> nodo436
+nodo436 -> nodo437
+nodo437 -> nodo438
+nodo438 -> nodo439
+nodo439 -> nodo440
+Fila18 -> nodo441; 
+nodo441 -> nodo442
+nodo442 -> nodo443
+nodo443 -> nodo444
+nodo444 -> nodo445
+nodo445 -> nodo446
+nodo446 -> nodo447
+nodo447 -> nodo448
+nodo448 -> nodo449
+nodo449 -> nodo450
+nodo450 -> nodo451
+nodo451 -> nodo452
+nodo452 -> nodo453
+nodo453 -> nodo454
+nodo454 -> nodo455
+nodo455 -> nodo456
+nodo456 -> nodo457
+nodo457 -> nodo458
+nodo458 -> nodo459
+nodo459 -> nodo460
+Fila19 -> nodo461; 
+nodo461 -> nodo462
+nodo462 -> nodo463
+nodo463 -> nodo464
+nodo464 -> nodo465
+nodo465 -> nodo466
+nodo466 -> nodo467
+nodo467 -> nodo468
+nodo468 -> nodo469
+nodo469 -> nodo470
+nodo470 -> nodo471
+nodo471 -> nodo472
+nodo472 -> nodo473
+nodo473 -> nodo474
+nodo474 -> nodo475
+nodo475 -> nodo476
+nodo476 -> nodo477
+nodo477 -> nodo478
+nodo478 -> nodo479
+nodo479 -> nodo480
+Fila20 -> nodo481; 
+nodo481 -> nodo482
+nodo482 -> nodo483
+nodo483 -> nodo484
+nodo484 -> nodo485
+nodo485 -> nodo486
+nodo486 -> nodo487
+nodo487 -> nodo488
+nodo488 -> nodo489
+nodo489 -> nodo490
+nodo490 -> nodo491
+nodo491 -> nodo492
+nodo492 -> nodo493
+nodo493 -> nodo494
+nodo494 -> nodo495
+nodo495 -> nodo496
+nodo496 -> nodo497
+nodo497 -> nodo498
+nodo498 -> nodo499
+nodo499 -> nodo500
+
+{ rank = same; Fila1; nodo1; nodo2; nodo3; nodo4; nodo5; nodo6; nodo7; nodo8; nodo9; nodo10; nodo111; nodo112; nodo113; nodo114; nodo115; nodo116; nodo117; nodo118; nodo119; nodo120} 
+{ rank = same; Fila2; nodo11; nodo12; nodo13; nodo14; nodo15; nodo16; nodo17; nodo18; nodo19; nodo20; nodo131; nodo132; nodo133; nodo134; nodo135; nodo136; nodo137; nodo138; nodo139; nodo140} 
+{ rank = same; Fila3; nodo21; nodo22; nodo23; nodo24; nodo25; nodo26; nodo27; nodo28; nodo29; nodo30; nodo151; nodo152; nodo153; nodo154; nodo155; nodo156; nodo157; nodo158; nodo159; nodo160} 
+{ rank = same; Fila4; nodo31; nodo32; nodo33; nodo34; nodo35; nodo36; nodo37; nodo38; nodo39; nodo40; nodo171; nodo172; nodo173; nodo174; nodo175; nodo176; nodo177; nodo178; nodo179; nodo180} 
+{ rank = same; Fila5; nodo41; nodo42; nodo43; nodo44; nodo45; nodo46; nodo47; nodo48; nodo49; nodo50; nodo191; nodo192; nodo193; nodo194; nodo195; nodo196; nodo197; nodo198; nodo199; nodo200} 
+{ rank = same; Fila6; nodo51; nodo52; nodo53; nodo54; nodo55; nodo56; nodo57; nodo58; nodo59; nodo60; nodo211; nodo212; nodo213; nodo214; nodo215; nodo216; nodo217; nodo218; nodo219; nodo220} 
+{ rank = same; Fila7; nodo61; nodo62; nodo63; nodo64; nodo65; nodo66; nodo67; nodo68; nodo69; nodo70; nodo231; nodo232; nodo233; nodo234; nodo235; nodo236; nodo237; nodo238; nodo239; nodo240} 
+{ rank = same; Fila8; nodo71; nodo72; nodo73; nodo74; nodo75; nodo76; nodo77; nodo78; nodo79; nodo80; nodo251; nodo252; nodo253; nodo254; nodo255; nodo256; nodo257; nodo258; nodo259; nodo260} 
+{ rank = same; Fila9; nodo81; nodo82; nodo83; nodo84; nodo85; nodo86; nodo87; nodo88; nodo89; nodo90; nodo271; nodo272; nodo273; nodo274; nodo275; nodo276; nodo277; nodo278; nodo279; nodo280} 
+{ rank = same; Fila10; nodo91; nodo92; nodo93; nodo94; nodo95; nodo96; nodo97; nodo98; nodo99; nodo100; nodo291; nodo292; nodo293; nodo294; nodo295; nodo296; nodo297; nodo298; nodo299; nodo300} 
+{ rank = same; Fila11; nodo301; nodo302; nodo303; nodo304; nodo305; nodo306; nodo307; nodo308; nodo309; nodo310; nodo311; nodo312; nodo313; nodo314; nodo315; nodo316; nodo317; nodo318; nodo319; nodo320} 
+{ rank = same; Fila12; nodo321; nodo322; nodo323; nodo324; nodo325; nodo326; nodo327; nodo328; nodo329; nodo330; nodo331; nodo332; nodo333; nodo334; nodo335; nodo336; nodo337; nodo338; nodo339; nodo340} 
+{ rank = same; Fila13; nodo341; nodo342; nodo343; nodo344; nodo345; nodo346; nodo347; nodo348; nodo349; nodo350; nodo351; nodo352; nodo353; nodo354; nodo355; nodo356; nodo357; nodo358; nodo359; nodo360} 
+{ rank = same; Fila14; nodo361; nodo362; nodo363; nodo364; nodo365; nodo366; nodo367; nodo368; nodo369; nodo370; nodo371; nodo372; nodo373; nodo374; nodo375; nodo376; nodo377; nodo378; nodo379; nodo380} 
+{ rank = same; Fila15; nodo381; nodo382; nodo383; nodo384; nodo385; nodo386; nodo387; nodo388; nodo389; nodo390; nodo391; nodo392; nodo393; nodo394; nodo395; nodo396; nodo397; nodo398; nodo399; nodo400} 
+{ rank = same; Fila16; nodo401; nodo402; nodo403; nodo404; nodo405; nodo406; nodo407; nodo408; nodo409; nodo410; nodo411; nodo412; nodo413; nodo414; nodo415; nodo416; nodo417; nodo418; nodo419; nodo420} 
+{ rank = same; Fila17; nodo421; nodo422; nodo423; nodo424; nodo425; nodo426; nodo427; nodo428; nodo429; nodo430; nodo431; nodo432; nodo433; nodo434; nodo435; nodo436; nodo437; nodo438; nodo439; nodo440} 
+{ rank = same; Fila18; nodo441; nodo442; nodo443; nodo444; nodo445; nodo446; nodo447; nodo448; nodo449; nodo450; nodo451; nodo452; nodo453; nodo454; nodo455; nodo456; nodo457; nodo458; nodo459; nodo460} 
+{ rank = same; Fila19; nodo461; nodo462; nodo463; nodo464; nodo465; nodo466; nodo467; nodo468; nodo469; nodo470; nodo471; nodo472; nodo473; nodo474; nodo475; nodo476; nodo477; nodo478; nodo479; nodo480} 
+{ rank = same; Fila20; nodo481; nodo482; nodo483; nodo484; nodo485; nodo486; nodo487; nodo488; nodo489; nodo490; nodo491; nodo492; nodo493; nodo494; nodo495; nodo496; nodo497; nodo498; nodo499; nodo500} 
+} 
+ } 
+ 
