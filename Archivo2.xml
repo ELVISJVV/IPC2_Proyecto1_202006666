@@ -2,21 +2,6 @@
 <pacientes>
    <paciente>
       <datospersonales>
-         <nombre>Jorge</nombre>
-         <edad>24</edad>
-      </datospersonales>
-      <periodos>1222222</periodos>
-      <m>10</m>
-      <rejilla>
-         <celda f="0" c="4" />
-         <celda f="1" c="4" />
-         <celda f="2" c="4" />
-         <celda f="1" c="3" />
-         <celda f="1" c="5" />
-      </rejilla>
-   </paciente>
-   <paciente>
-      <datospersonales>
          <nombre>Pedro</nombre>
          <edad>33</edad>
       </datospersonales>
@@ -69,7 +54,7 @@
          <celda f="12" c="7" />
          <celda f="12" c="8"/>
          <celda f="12" c="11"/>
-         <celda f="12" c="0"/>
+         <celda f="12" c="12"/>
 
          
       </rejilla>

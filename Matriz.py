@@ -179,32 +179,43 @@ class MatrizDispersa():
             i +=  1
      
     def actualizarDato(self, posx, posy, dato):
-        
-        nuevaCelda = NodoCelda(posx, posy, dato)
+        nuevaCelda = NodoCelda(posx,posy,dato)
+        nodoX = self.filas.getCabeza(posx)
+        print("tipoo")
+        print(type(nodoX))
+        nodoY = self.columnas.getCabeza(posy)
         
         # print('=======')
         # print(nuevaCelda)
         # print('=======')
-        nodo_X = self.filas.getCabeza(int(posx))
+        # nodoX = self.filas.getCabeza(posx)
         # nodo_Y = self.columnas.getCabeza(posy)
         
         # Actualizar en fila
-        print(nodo_X)
+        print(nodoX)
         # print(posx)
-        x=nodo_X.getAcceso().coordenadaY
-        print(nodo_X.getAcceso().coordenadaY)
-        if nuevaCelda.coordenadaY == x:
-        # if nuevaCelda.coordenadaY == nodo_X.getAcceso().coordenadaY:
-            
-            nodo_X.getAcceso().setDato(nuevaCelda.getDato())
+        # x=nodoX.getAcceso().coordenadaY
+        # print(nodoX.getAcceso().coordenadaY)
+        if nuevaCelda.coordenadaY == nodoX.getAcceso().coordenadaY:
+        # if nuevaCelda.coordenadaY == nodoX.getAcceso().coordenadaY:
+            print(type(nuevaCelda.coordenadaY ))
+            print(type( nodoX.getAcceso().coordenadaY))
+            nodoX.getAcceso().setDato(nuevaCelda.getDato())
         else:
             
-            temp = nodo_X.getAcceso()
+            temp = nodoX.getAcceso()
+            # print("tipo temp")
+            # print(type(temp))
             
             while temp != None:
                 
                 if nuevaCelda.coordenadaY == temp.coordenadaY:
                     
+                    print(type( nuevaCelda.coordenadaY ))
+                    print(type(temp.coordenadaY))
+                    print( nuevaCelda.coordenadaY )
+                    print(temp.coordenadaY)
+                    print(type(nuevaCelda.getDato()))
                     temp.setDato(nuevaCelda.getDato())
                 
                 temp = temp.getDerecha()
@@ -222,7 +233,7 @@ class MatrizDispersa():
 
     def graficarMapa(self, nombrePaciente, filas, columnas): 
 
-            graphviz = 'digraph L{ \n node[shape= square, fillcolor="#C0C0C0", style= filled]; \n \n edge[style = invis]; \n ranksep = 0 \n nodesep = 0.1  \n bgcolor = "#EDBB99 " \n subgraph cluster_A{ \n \n label = "'+ nombrePaciente +'" \n bgcolor = "#20B2AA" \n fontcolor = white \n fontsize = 30 \n raiz[label= "", style = invis] \n edge[dir = "both"] \n '
+            graphviz = 'digraph L{ \n node[shape= square, fillcolor="#C0C0C0", style= filled]; \n \n edge[style = invis]; \n ranksep = 0 \n nodesep = 0.1  \n bgcolor = "#31b220 " \n subgraph cluster_A{ \n \n label = "'+ nombrePaciente +'" \n bgcolor = "#00cb83" \n fontcolor = white \n fontsize = 30 \n raiz[label= "", style = invis] \n edge[dir = "both"] \n '
 
             # variables auxiliares
 

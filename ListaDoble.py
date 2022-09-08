@@ -108,7 +108,7 @@ class ListaDoble:
                             # print(dimension)
                             if dimension % 10 == 0 and dimension <= 10000 and dimension != 0:
                                 cuerpo = MatrizDispersa()
-                                print(" es adecuada")
+                                # print(" es adecuada")
                                 for i in range(1,dimension+1,1):
                                     # print("prueba2")
                                     for j in range(1,dimension+1,1):
@@ -119,7 +119,8 @@ class ListaDoble:
                                         idCelda += 1 
                                 
                             else:
-                                print("no es addecuado")
+                                # print("no es addecuado")
+                                pass
                                 
                             
                                     
@@ -135,10 +136,10 @@ class ListaDoble:
 
                                     if int(fila) <= 0 or int(fila) > dimension:
                                         validacionFilaColumna = False
-                                        print(fila + " fila")
+                                        # print(fila + " fila")
                                     if int(columna) <= 0 or int(columna) > dimension :
                                         validacionFilaColumna = False
-                                        print(columna + " colum")
+                                        # print(columna + " colum")
                                     
                                     # print("================")
                                     # print(fila)
@@ -151,11 +152,10 @@ class ListaDoble:
                                     idCeldaInfectada += 1
 
                 
-                # def es_multiplo(numero, multiplo):
+          
                  # Si el residuo es 0, es múltiplo
                 if dimension % 10 == 0 and dimension <= 10000 and dimension != 0 and periodos <= 10000 and validacionFilaColumna == True: 
-                #     pass
-                    print("Antes de agregar")
+             
                     paciente = Paciente(id,nombre, edad, periodos, dimension, cuerpo,listaCeldasInfectadas) 
                     listaPacientes.insertar(paciente) 
                     id +=1
@@ -163,12 +163,12 @@ class ListaDoble:
                     fila = 0
                     columna = 0
                     cuerpo = MatrizDispersa()
-                    # print('++++++++++++++++++++++++++')
+                    
                     #limpiar la lista listaCeldasInfectadas
                     listaCeldasInfectadas = ListaDoble()
                     idCelda = 0 
                     idCeldaInfectada = 0
-                    print("seagrego")
+                    # print("seagrego")
                     validacionFilaColumna = True 
                
                 
@@ -195,7 +195,7 @@ class ListaDoble:
 
         while temp != None:
 
-            print('F: {}\nC: {}\n'.format(temp.dato.fila, temp.dato.columna)) 
+            print('F: {}\nC: {}\n'.format(temp.dato.X, temp.dato.Y)) 
 
             temp = temp.siguiente
 

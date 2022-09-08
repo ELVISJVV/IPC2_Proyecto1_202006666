@@ -1,6 +1,8 @@
 
+import xml.etree.cElementTree as ET
 from ListaDoble import ListaDoble
-
+import os
+import webbrowser
 
 if __name__ == '__main__':
     
@@ -16,7 +18,8 @@ if __name__ == '__main__':
         print("1. Cargar Archivo")
         print("2. Listar Pacientes")
         print("3. Seleccionar  Paciente")
-        print("4. Salir")
+        print("4. Generar Reporte")
+        print("5. Salir")
         print("================================")
         opcion = input()
 
@@ -49,7 +52,7 @@ if __name__ == '__main__':
 
         elif opcion =='3':
             
-            # try:
+            try:
                 listaPacientes = rutas.cargarPacientes()
                 paciente = ListaDoble()
 
@@ -61,29 +64,49 @@ if __name__ == '__main__':
                     print("Ingresa el número de paciente deseado")
                     seleccionPaciente =input()
                     # muestra paciente seleccionado 
-                    # nombreseleccion = listaPacientes.returnElement(int(seleccionPaciente))
+                    nombreseleccion = listaPacientes.returnElement(int(seleccionPaciente))
                     # print(nombreseleccion)
                     paciente = listaPacientes.returnElement(int(seleccionPaciente))
                     infecciones = paciente.getDato().getCelulaInfectada()
                     mapaCuerpo = paciente.getDato().getCuerpo()
                     nombrePaciente = paciente.getDato().getNombre()
+                    edadPaciente =  paciente.getDato().getEdad()
+                    periodosPaciente = paciente.getDato().getPeriodos()
                     dimension = paciente.getDato().getDimension()
-                    print(infecciones)
-                    print(mapaCuerpo)
-                    print(nombrePaciente)
-                    print(dimension)
-                    print(infecciones.size)
-                    print(infecciones.returnElement(1))
-                    unidadesinfectadas = infecciones.returnElement(1)
-                    print(unidadesinfectadas.getDato().getX())
-                    print (unidadesinfectadas.getDato().getY())
-                    print(unidadesinfectadas.getDato())
-                    mapaCuerpo.mostrarMatriz()
-                    j = 1
+                    # paciente.mostrarPacientes()
+                    # print(infecciones)
+                    print('\n')
+                    print("Nombre Paciente:  " + nombrePaciente)
+                    print("Edad Paciente:  " + str(edadPaciente))
+                    print("Dimension:  " + str(dimension))
+                    print("Periodos:  " + str(periodosPaciente))
+                    print("Rejillas Contagiadas:")
+                    infecciones.mostrarRejillas()
+                    # print(mapaCuerpo)
+                    # print(nombrePaciente)
+                    # print(dimension)
+                    # print(infecciones.size)
+                    # print(infecciones.returnElement(1))
+                    # unidadesinfectadas = infecciones.returnElement(1)
+                    # print(unidadesinfectadas.getDato().getX())
+                    # print (unidadesinfectadas.getDato().getY())
+                    # print(unidadesinfectadas.getDato())
+                    # mapaCuerpo.mostrarMatriz()
+                    # j = 1
                     # for i in range(0,infecciones.size, 1):
                                     
                     #             unidadesinfectadas = infecciones.returnElement(j)
-                    #             mapaCuerpo.actualizarDato(unidadesinfectadas.getDato().getX(), unidadesinfectadas.getDato().getY(), unidadesinfectadas.getDato())
+                    #             print(unidadesinfectadas)
+                    #             r=unidadesinfectadas.getDato().getX()
+                    #             z=unidadesinfectadas.getDato().getY()
+                    #             dato=unidadesinfectadas.getDato()
+                    #             print(type(r))
+                    #             print(type(z))
+                    #             print("asasas")
+                    #             print(type(dato))
+                    #             x=int(r)
+                    #             y=int(z)
+                    #             mapaCuerpo.actualizarDato(x, y,dato )
                                 
                     #             j += 1
                                 
@@ -93,10 +116,52 @@ if __name__ == '__main__':
                 else:
                     print("No hay datos de pacientes")
 
-            # except:
-            #     print("No se hallaron datos almacenados")
-            
+            except:
+                 print("No se hallaron datos almacenados")
+
         elif opcion == '4':
+
+
+            listaPacientes = rutas.cargarPacientes()
+            paciente = ListaDoble()
+
+            
+              
+
+            if listaPacientes.size != 0:
+               
+                size=listaPacientes.size
+            
+           
+                ruta=os.path.dirname(os.path.abspath(__file__))
+                ruta = ruta + "/"
+                # print(ruta)
+                root = ET.Element("pacientes")
+
+                i = 1
+                for numero in range(1,size+1):
+                    paciente = listaPacientes.returnElement(i)
+                    doc = ET.SubElement(root, "paciente")
+                    datosxml = ET.SubElement(doc, "datospersonales")
+                    ET.SubElement(datosxml, "nombre").text=str(paciente.getDato().getNombre())
+                    ET.SubElement(datosxml, "edad").text=str(paciente.getDato().getEdad())
+
+
+                    ET.SubElement(doc, "periodos").text=str(paciente.getDato().getPeriodos())
+                    ET.SubElement(doc, "m").text=str(paciente.getDato().getDimension())
+                    ET.SubElement(doc, "resultado").text="Aún no se ha diagnosticado alguna enfermedad"
+
+                    i += 1
+
+                archivo = ET.ElementTree(root)
+                archivo.write(ruta + "reporte.xml",xml_declaration=True,encoding="UTF-8")
+                abrirArchivo=ruta+"reporte.xml"
+                webbrowser.open(abrirArchivo)
+
+            else:
+                print("No hay datos de pacientes")
+            
+        elif opcion == '5':
             print("Hasta pronto")
             salir = True
         else:

@@ -45,3 +45,7 @@ class CelulaInfectada(Celda):
     def __init__(self, X, Y, idCelda,color):
     
         Celda.__init__(self, X, Y, idCelda, color)
+        self.X= X
+        self.Y = Y
+        self.idCelda = idCelda
+        self.color = color
